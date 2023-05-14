@@ -66,7 +66,7 @@ function App() {
   return (
     <Router>
       <div className="app">
-        {showVideo && window.location.pathname === '/' ? (
+        {showVideo && window.location.pathname === '/1' ? (
           <video id="video" autoPlay muted style={{ width:'100%', height: '97vh', margin: '0 auto', objectFit: 'cover', opacity: isFading ? '0' : '1', transition: 'opacity 1s' }}>
             <source src="/loading.mp4" type="video/mp4" />
           </video>
