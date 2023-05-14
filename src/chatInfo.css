@@ -1,0 +1,9 @@
+.chatInfo {
+	position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 90vw;
+	z-index: 2;
+	padding-top: 65px;
+}

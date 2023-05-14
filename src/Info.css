@@ -1,0 +1,165 @@
+.info-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 1000;
+  transition: opacity 1s ease-in-out;
+}
+
+.backbutton2 {
+	margin: 20px;
+	position: fixed;
+	z-index: 1001;
+	top: 0px;
+	left: 0px;
+	width: 30px;
+	height: 30px;
+}
+.info-content {
+	height: 550vh;
+  position: relative;
+  z-index: 1001;
+	align-content: center;
+	color: white;
+  /* Info 페이지 내용 스타일 */
+}
+
+.show-me {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadein 2.5s;
+  color: white; /* 흰색 글씨 */
+	text-align: center;
+}
+
+.show-me-long {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeinslow 5s;
+  color: white; /* 흰색 글씨 */
+	text-align: center;
+}
+
+.show-me-last {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeinlast 10s;
+  color: white; /* 흰색 글씨 */
+	text-align: center;
+	background-image: url('../public/effect.mp4');
+  background-size: cover;
+	z-index: 1001;
+}
+
+.homebutton {
+	position: fixed;
+	z-index: 1001;
+  left: 50%;
+  top: 70%;
+	transform: translate(-50%, -50%);
+	opacity: 0.85;
+  animation: fade 10s;
+	width: 40px;
+	height: 40px;
+}
+
+.background-effect {
+	position: fixed;
+  left: 50%;
+  top: 45%;
+	opacity: 0.45;
+  transform: translate(-50%, -50%);
+  animation: fadeeffect 10s;
+	z-index: 1000;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+	100% {
+				opacity: 0;
+	}
+}
+
+@keyframes fadeinslow {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+		75% {
+				opacity: 1;
+		}
+	100% {
+				opacity: 0;
+	}
+}
+
+@keyframes fadeinlast {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+		90% {
+				opacity: 1;
+		}
+	100% {
+				opacity: 0;
+	}
+}
+
+@keyframes fade {
+	0% {
+        opacity: 0;
+    }
+	30% {
+        opacity: 0;
+    }
+	40% {
+        opacity: 1;
+    }
+  100% {
+        opacity: 1;
+	}
+}
+
+@keyframes fadeeffect {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+		30% {
+        opacity: 1;
+    }
+		90% {
+				opacity: 1;
+		}
+	100% {
+				opacity: 0;
+	}
+}

@@ -1,0 +1,193 @@
+/* ui design : https://www.loud.kr/portfolio/category-all/industry-all/tag- */
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	margin: 0;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+	background-color: white;
+}
+.backbutton {
+	margin: 20px;
+	position: fixed;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Gowun Dodum', sans-serif;
+  display: inline-block; /*a태그에 margin을 주려면 inline-block을 해야함.*/
+  width: 100vw;
+	margin: 20px 0px 20px 0px;
+  text-align: center;
+  color: #1ab86c;
+}
+.Home {
+	width: 100vw;
+}
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+.fadeOut {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+/* -Card design- */
+a{
+	text-decoration:none;
+}
+/* hover 이후 */
+figure{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+figure:hover figcaption{ opacity: 1; }
+figure:hover .line::before { width: 90%; } 
+figure:hover .line::after { width: 90%; }
+figure:hover .line span::before { height: 90%; }
+figure:hover .line span::after { height: 90.5%; }
+
+/* hover 이전 배경 */
+figcaption{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+	background-size: cover; /* 배경 이미지를 가득 채우도록 설정 */
+  background-position: center; /* 배경 이미지 위치를 가운데로 설정 */
+	background-color: rgba(0, 0, 0, 0);
+  position:relative;
+  opacity:0.6;
+  transition: all 0.5s;
+  font-size: 5vm;
+}
+
+
+.line::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    transition: all 0.5s;
+    left: 5%;
+    top: 5%;
+    width: 0%;
+    height: 2px; 
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  background: rgba(230, 230, 230, 0.5);
+  display: inline-block;
+  transition: all 0.5s;
+  left: 5%;
+  top: 95%;
+  width: 0%;
+  height: 2px; }
+
+.line span::before {
+  content: "";
+  position: absolute;
+  background: rgba(230, 230, 230, 0.5);
+  display: inline-block;
+  transition: all 0.5s;
+  left: 5%;
+  top: 5%;
+  width: 2px;
+  height: 0%; }
+
+.line span::after {
+  content: "";
+  position: absolute;
+  background: rgba(230, 230, 230, 0.5);
+  display: inline-block;
+  transition: all 0.5s;
+  left: 95%;
+  top: 5%;
+  width: 2px;
+  height: 0%; }
+
+.content {
+  font-size: 5vm;
+  font-weight: bold;
+  font-family: 'Gowun Dodum', sans-serif;
+  color: white;
+}
+
+/* ----태블릿&스마트폰---- */
+@media only screen {
+.Home {
+	height: 100%;
+	width: 46vh;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 25px;
+}
+.column1 {
+	margin-top: 60px;
+	width: calc(100vw - 50px);
+	height: calc(35vh - 50px);
+	background-image: url('../public/1.png');
+	background-size: cover; /* 배경 이미지를 가득 채우도록 설정 */
+	border-radius: 10px;
+}
+.column2 {
+	width: calc(100vw - 50px);
+	height: calc(28vh - 50px);
+	background-image: url('../public/2.png');
+	background-size: cover;
+	border-radius: 10px;
+}
+.column3 {
+	width: calc(50vw - 30px);
+	height: calc(30vh - 50px);
+	margin-bottom: 50px;
+	margin-right: 10px;
+	background-image: url('../public/3.png');
+	background-size: cover;
+	border-radius: 10px;
+}
+.column4 {
+	width: calc(50vw - 30px);
+	height: calc(30vh - 50px);
+	margin-bottom: 30px;
+	margin-left: 10px;
+	background-image: url('../public/4.png');
+	background-size: cover;
+	border-radius: 10px;
+}
+}

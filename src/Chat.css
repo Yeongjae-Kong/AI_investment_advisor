@@ -1,0 +1,126 @@
+/* Chat container */
+.chat-container {
+  margin-top: 80px;
+	margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 83vh;
+  width: 90vw;
+}
+
+/* Chat message box */
+.chat-box {
+  height: 80%;
+  width: 90%;
+	padding: 10px;
+	border-radius: 20px;
+  overflow-y: scroll;
+  display: flex; /* 추가 */
+  flex-direction: column; /* 추가 */
+  justify-content: flex-start; /* 추가 */
+	background-color: rgba(0, 255, 0, 0.15);
+	position: relative;
+}
+
+.chat-box svg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Chat message */
+.chat-message {
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 0.9rem;
+  animation: fade-in 0.5s ease-in-out;
+  margin: 0px 10px;
+	width: 90%;
+}
+
+/* User message */
+.user {
+  background-color: rgba(144, 238, 144, 1);
+  color: white;
+  float: right;
+  clear: both;
+  margin: 3px 0px;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  animation: bubbleIn 0.5s ease;
+}
+
+/* Assistant message */
+.assistant {
+  background-color: white;
+  float: left;
+  clear: both;
+  margin: 3px 0px;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  animation: bubbleIn 0.5s ease;
+}
+
+/* chat input field */
+.chat-input {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 90%;
+  max-width: 500px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: inline-block;
+  padding: 10px;
+	margin: 5px 0px 0px;
+  border-radius: 10px;
+  border: none;
+	font-size: 14px;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0.03);
+	width: 70%;
+}
+.chat-input button:hover {
+	opacity: 0.6;
+}
+
+.chat-input #send-button {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  background-color: rgba(144, 238, 144, 1);
+  color: white;
+  border: none;
+	margin-top:5px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Loader */
+.loader {
+text-align: center;
+font-size: 0.8em;
+color: gray;
+z-index: 1;
+}
+
+/* fade-in animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
