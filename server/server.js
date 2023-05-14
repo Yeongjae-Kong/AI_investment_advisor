@@ -13,15 +13,15 @@ const configuration = new Configuration({
   });
 const openai = new OpenAIApi(configuration);
 
-// //CORS 설정 - cloudflare pages에 연결했을 때
-// let corsOptions = {
-//     origin: 'https://openaiapp-wpuax.run.goorm.site', //'https://ai-investment.pages.dev', 
-//     credentials: true
-// }
-// app.use(cors(corsOptions));
+//CORS 설정 - 배포 후 사용
+let corsOptions = {
+    origin: 'https://chatgpt-korea.pages.dev', 
+    credentials: true
+}
+app.use(cors(corsOptions));
 
-//CORS 설정 - 모두 접근 허용
-app.use(cors());
+// //CORS 설정 - 모두 접근 허용, 로컬에서 개발 시 사용
+// app.use(cors());
 
 //POST 요청 받을 수 있게 만듬
 app.use(express.json()) // for parsing application/json

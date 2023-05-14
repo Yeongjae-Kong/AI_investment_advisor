@@ -9,7 +9,7 @@ import Info from './Info.js';
 // Easily add high-quality animation to any native app. -> https://github.com/airbnb/lottie-web
 
 /* 모든 페이지 확대/축소 비활성화, 메인페이지는 스크롤도 비활성화 */
-if (window.location.href === "https://openaiapp.run.goorm.site") {
+if (window.location.href === "https://chatgpt-korea.pages.dev") {
   document.documentElement.style.overflow = "hidden";
   document.body.style.touchAction = "none";
   document.body.style.userZoom = "none";
