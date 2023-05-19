@@ -144,26 +144,26 @@ function handleClick() {
   }
 	
 	
-/* ---- 모바일에서 가상키보드 사이즈에 따른 chatInput 위치 변경----*/
-let windowHeight = window.innerHeight;
+// /* ---- 모바일에서 가상키보드 사이즈에 따른 chatInput 위치 변경----*/
+// let windowHeight = window.innerHeight;
 
-window.addEventListener('resize', () => {
-  let newWindowHeight = window.innerHeight;
-  const keyboardHeight = windowHeight - newWindowHeight;
-  windowHeight = newWindowHeight;
+// window.addEventListener('resize', () => {
+//   let newWindowHeight = window.innerHeight;
+//   const keyboardHeight = windowHeight - newWindowHeight;
+//   windowHeight = newWindowHeight;
 
-  if (keyboardHeight > 0) {
-    const chatInput = document.querySelector('.chat-input');
-    chatInput.style.bottom = `${keyboardHeight}px`;
-  }
-});
+//   if (keyboardHeight > 0) {
+//     const chatInput = document.querySelector('.chat-input');
+//     chatInput.style.bottom = `${keyboardHeight}px`;
+//   }
+// });
 
-// 최초 실행 시 가상 키보드의 높이를 측정
-if (window.visualViewport.height > window.innerHeight) {
-  const keyboardHeight = window.visualViewport.height - window.innerHeight;
-  const chatInput = document.querySelector('.chat-input');
-  chatInput.style.bottom = `${keyboardHeight}px`;
-}
+// // 최초 실행 시 가상 키보드의 높이를 측정
+// if (window.visualViewport.height > window.innerHeight) {
+//   const keyboardHeight = window.visualViewport.height - window.innerHeight;
+//   const chatInput = document.querySelector('.chat-input');
+//   chatInput.style.bottom = `${keyboardHeight}px`;
+// }
 	
 	
 return (
