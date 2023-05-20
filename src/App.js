@@ -6,6 +6,8 @@ import ChatInfo from './chatInfo.js';
 import Inquiry from './inquiry.js';
 import Info from './Info.js';
 
+// 230520 수정할 것 - 모바일 화면에서 info video 오류 해결, chat.js 빈공간 수정, chatinfo.js 화면 내릴 때 깜박임 해결, inquiry에 '개발자에게 1000원의 행복 선물하기' 추가, 
+
 // Easily add high-quality animation to any native app. -> https://github.com/airbnb/lottie-web
 
 /* 모든 페이지 확대/축소 비활성화, 메인페이지는 스크롤도 비활성화 */

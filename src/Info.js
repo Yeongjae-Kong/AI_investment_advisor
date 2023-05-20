@@ -6,12 +6,6 @@ import {IoHome} from "react-icons/io5";
 import './Info.css';
 
 
-
-
-// 마지막 도착 시 3초 후에 폭죽터지는 png background로 실행
-
-
-
 function Info() {
 	// 라우팅 시 검게 Fade
   const [showTransition, setShowTransition] = useState(false);
