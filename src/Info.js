@@ -75,7 +75,7 @@ function Info() {
 					 <br></br>
 				 </div>}
 				{divNum === 5 && isVisible && <div className="background-effect">
-					  <video height="45vh" width="100vw" autoplay={true} loop={true} muted={true} playsinline={true}>
+					  <video>
 							<source src="/effect.mp4" type="video/mp4" />
 						</video>
 				 </div>}
