@@ -81,12 +81,12 @@
 
 .background-effect {
 	position: fixed;
-  left: 0%;
+  left: 0;
   top: 22%;
 	opacity: 0.5;
-  animation: fadeeffect 10s;
+  -webkit-animation: fadeeffect 10s;
+	animation: fadeeffect 10s;
 	z-index: 1000;
-	-webkit-transform: translate3d(0,0,0);
 }
 
 @keyframes fadein {
@@ -147,6 +147,24 @@
 }
 
 @keyframes fadeeffect {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+		30% {
+        opacity: 1;
+    }
+		90% {
+				opacity: 1;
+		}
+	100% {
+				opacity: 0;
+	}
+}
+
+@-webkit-keyframes fadeeffect {
     0% {
         opacity: 0;
     }
