@@ -81,7 +81,7 @@ function Info() {
 					 <br></br>
 				 </div>}
 				{divNum === 5 && isVisible && <div className="background-effect" style={{width: '100vw', height: '45vh', overflow: 'hidden'}}>
-					  <video autoPlay loop muted style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: '0.45' }}>
+					  <video autoPlay loop muted playsinline style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: '0.45'}}>
 							<source src="/effect.mp4" type="video/mp4" />
 						</video>
 				 </div>}
