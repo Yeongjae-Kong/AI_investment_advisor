@@ -176,7 +176,7 @@ return (
 			</div>
       {isLoading && (
           <div className="chat-message" style={{backgroundColor:"white"}}>
-            <p className="loader">잠시만 기다려주세요. AI가 답변을 생성하는 중입니다.</p>
+            <p className="loader">잠시만 기다려주세요. 답변 길이에 따라 5~20초가량 소모됩니다.</p>
           </div>
       )}
       <div className="chat-input">

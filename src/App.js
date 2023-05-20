@@ -27,7 +27,7 @@ function Card(props) {
 		<figcaption>
 		  <div class="line">
 			<span>
-			  <p className="content">{props.content}</p>
+			  <p>{props.content}</p>
 			</span>
 		  </div>
 		</figcaption>
@@ -80,7 +80,7 @@ function App() {
 									</Link>
 									)}
 								<Link to="/" className="title" onClick={handleLinkClick}>
-									ChatGPT 한국어버전
+									<strong>ChatGPT 한국어버전</strong>
 								</Link>
 							</div>
             </nav>

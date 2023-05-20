@@ -13,7 +13,7 @@ const configuration = new Configuration({
   });
 const openai = new OpenAIApi(configuration);
 
-//CORS 설정 - 배포 후 사용
+//CORS 설정
 let corsOptions = {
     origin: ['https://chatgpt-korea.pages.dev', 'https://openaiapp.run.goorm.site'],
     credentials: true

@@ -80,13 +80,12 @@
 }
 
 .background-effect {
-	position: fixed;
-  left: 50%;
-  top: 45%;
-	opacity: 0.45;
-  transform: translate(-50%, -50%);
+	position: relative;
+  width: 100%;
+  height: 45vh;
+  opacity: 0.45;
   animation: fadeeffect 10s;
-	z-index: 1000;
+  z-index: 1000;
 }
 
 @keyframes fadein {
