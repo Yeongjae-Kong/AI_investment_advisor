@@ -81,10 +81,9 @@
 
 .background-effect {
 	position: fixed;
-  left: 50%;
-  top: 45%;
-	opacity: 0.45;
-  transform: translate(-50%, -50%);
+  left: 0%;
+  top: 22%;
+	opacity: 0.5;
   animation: fadeeffect 10s;
 	z-index: 1000;
 }
