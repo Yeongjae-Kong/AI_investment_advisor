@@ -79,7 +79,7 @@
 	height: 40px;
 }
 
-.background-effect {
+/* .background-effect {
 	position: fixed;
   left: 0;
   top: 22%;
@@ -87,7 +87,7 @@
   -webkit-animation: fadeeffect 10s;
 	animation: fadeeffect 10s;
 	z-index: 1000;
-}
+} */
 
 @keyframes fadein {
     0% {
