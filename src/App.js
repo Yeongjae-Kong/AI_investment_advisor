@@ -7,6 +7,7 @@ import Inquiry from './inquiry.js';
 import Info from './Info.js';
 
 // 230520 수정할 것 - 모바일 화면에서 info video 오류 해결, chat.js 빈공간 수정, chatinfo.js 화면 내릴 때 깜박임 해결, inquiry에 '개발자에게 1000원의 행복 선물하기' 추가, 
+// expo - https://anerim.tistory.com/239, expo ios - https://velog.io/@acwell94/expo-ios-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0
 
 // Easily add high-quality animation to any native app. -> https://github.com/airbnb/lottie-web
 

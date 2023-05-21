@@ -74,11 +74,6 @@ function Info() {
 					 접근성과 편리성을 높이고자  <br></br> 언제나 노력하고 있습니다. <br></br> 사용하시면서 불편했던 점은 <br></br> 문의 넣어주신다면 <br></br> 빠른 시일내에 <br></br> 반영하도록 하겠습니다. <br></br><br></br> 이용해주셔서 감사합니다.
 					 <br></br>
 				 </div>}
-				{divNum === 5 && isVisible && <div className="background-effect">
-					  <video>
-							<source src="/effect.mp4" type="video/mp4" />
-						</video>
-				 </div>}
 				{divNum === 5 && isVisible && <Link to="/">
 						<IoHome className="homebutton" color='white'/>
 					</Link>}
@@ -88,3 +83,11 @@ function Info() {
 }
 
 export default Info;
+
+// video 오류로 잠시 보류, divNum===5인 두 div 사이에 들어갔었음.
+
+// {divNum === 5 && isVisible && <div className="background-effect">
+// <video autolay loop muted playsinline style={{ width: '100vw', height: '45vh'}}>
+// <source src="/effect.mp4" type="video/mp4" />
+// </video>
+// </div>}

@@ -61,3 +61,5 @@ function Inquiry() {
 }
 
 export default Inquiry;
+
+// 토스 1000원 보내기 - https://blog.naver.com/PostView.naver?blogId=juny607&logNo=222631830394&parentCategoryNo=&categoryNo=52&viewDate=&isShowPopularPosts=true&from=search
